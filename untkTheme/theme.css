@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+:root {
+	--input-focus-border-color: Highlight;
+	--input-focus-outline: 1px solid Canvas;
+	--input-unfocused-border-color: transparent;
+	--input-disabled-border-color: transparent;
+	--input-hover-border-color: black;
+	/* Default Input Variables for Root */
+	--input-hover-border-color: rgb(51, 255, 0);
+ }	
+
+body {
+	--radius-s: 15px;
+	--radius-m: 15px;
+	--radius-l: 10px;
+	--input-radius: 15px;
+	--tab-radius-active: 5px;
+	--checkbox-radius: 10px;
+	--toggle-radius: 15px;
+	--toggle-thumb-radius: 10px;
+	--slider-thumb-radius: 15px;
+	--font-text-theme: 'Rubik', sans-serif;
+}
+
+
+
+svg * {
+	stroke-linecap: square;
+	stroke-linejoin: miter;
+	rx: 0;
+	ry: 0;
+}
+
+.menu {
+	padding: var(--size-2-1);
+}
+
+.menu-item {
+	padding: var(--size-4-1) var(--size-4-2);
+}
+
+.menu-separator {
+	margin: var(--size-2-1) calc(var(--size-2-1) * -1);
+}
+
+.theme-dark {
+	--background-primary: #111111;
+	--background-secondary: #1a1a1a;
+	color:white;
+	
+  }
+  
+  .theme-light {
+	--background-primary: #ffffff;
+	--background-secondary: #ffffff;
+  }
+
+  body:not(.is-grabbing) .nav-file-title.is-active:hover, 
+  body:not(.is-grabbing) .nav-folder-title.is-active:hover, 
+  .nav-file-title.is-active, .nav-folder-title.is-active {
+	background-color: rgb(0, 0, 0);
+	color: white;
+  }
+  
